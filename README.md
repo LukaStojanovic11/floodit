@@ -226,11 +226,11 @@ Build the frontend application:
 npm run build
 ```
 
-The static web files of the frontend will be saved in the `frontend/dist`
+The static web files of the frontend will be saved in the `frontend/dist/browser`
 directory:
 
 ```bash
-ls frontend/dist/
+ls frontend/dist/browser/
 ```
 
 Run the backend by executing the packaged [JAR file][jar]. This must be done
