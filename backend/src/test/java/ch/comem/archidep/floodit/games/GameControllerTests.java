@@ -91,18 +91,15 @@ class GameControllerTests extends AbstractControllerTests {
     return post(FloodItRoutes.GAMES).content(serialize(requestBody));
   }
 
-  private MockHttpServletRequestBuilder listRecentGamesRequest()
-    throws Exception {
+  private MockHttpServletRequestBuilder listRecentGamesRequest() {
     return get(FloodItRoutes.GAMES);
   }
 
-  private MockHttpServletRequestBuilder getGameRequest(long gameId)
-    throws Exception {
+  private MockHttpServletRequestBuilder getGameRequest(long gameId) {
     return get(FloodItRoutes.GAME, gameId);
   }
 
-  private MockHttpServletRequestBuilder getGameBoardRequest(long gameId)
-    throws Exception {
+  private MockHttpServletRequestBuilder getGameBoardRequest(long gameId) {
     return get(FloodItRoutes.GAME_BOARD, gameId);
   }
 }
